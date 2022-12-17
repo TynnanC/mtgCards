@@ -12,3 +12,6 @@ web-build/
 
 # macOS
 .DS_Store
+
+#BulkData
+.all-cards-20221216221555.json
