@@ -1,7 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-import { responsiveScreenHeight, responsiveScreenWidth, responsiveFontSize } from "react-native-responsive-dimensions";
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -15,6 +13,9 @@ const styles = StyleSheet.create({
         //Height is roughly 1.4x the width.
         width: 300,
         height: 420,
+        alignSelf: 'center'
+    },
+    button: {
         alignSelf: 'center'
     }
 });
