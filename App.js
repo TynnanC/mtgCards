@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, Button } from 'react-native';
+import { Text, Image, View, Button } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useState } from 'react';
 import * as cardData from './data/newData.json';
@@ -7,8 +7,10 @@ import styles from './styles/homeScreen.js';
 
 export default function App() {
   const [cardId, setCardId] = useState(0);
+  //
   return (
     <SafeAreaView style={styles.container}>
+      <Image style={styles.image} source={{ uri: cardData[cardId].image_uris.normal }} />
       <Text>Name: {cardData[cardId].name}</Text>
       <Text>Power: {cardData[cardId].power}</Text>
       <Text>Toughness: {cardData[cardId].toughness}</Text>
